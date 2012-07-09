@@ -1,0 +1,118 @@
+/*
+	The container contains the whole ajax search results box. The "content". 
+*/
+div.threewp_ajax_search_container
+{
+	position: absolute;
+	z-index: 100;
+	width: 300px;
+	height: 400px;
+}
+
+/**
+	Below are the default settings that look OK on TwentyTen.
+**/
+
+/**
+	Content box
+**/
+div.threewp_ajax_search_results_content
+{
+	position: relative;
+	overflow: auto;
+	background-color: #eee;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	border-radius: 5px;
+}
+
+div.threewp_ajax_search_results_content ul
+{
+	list-style-type: none;
+	margin: 0 !important;
+}
+
+div.threewp_ajax_search_results_content ul li
+{
+	padding: 5px;
+}
+
+div.threewp_ajax_search_results_content ul li a
+{
+	display: block;
+	height: 100%;		/** So that clicking anywhere on that line will work. */
+	width: 100%;		/** So that clicking anywhere on that line will work. */
+}
+
+/**
+	The first item has .item_first, which enables us to, in this case, have nice, rounded borders on the top.
+*/
+div.threewp_ajax_search_results_content ul li.item_first
+{
+	-moz-border-radius-topleft:		5px;
+	-moz-border-radius-topright:    5px;
+	-webkit-border-radius-topleft:		5px;
+	-webkit-border-radius-topright:    5px;
+	border-top-left-radius:         5px;
+	border-top-right-radius:        5px;
+}
+
+/**
+	The last item has .item_last, which enables us to, in this case, have nice, rounded borders on the bottom.
+*/
+div.threewp_ajax_search_results_content ul li.item_last
+{
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft:  5px;
+	-webkit-border-radius-bottomright: 5px;
+	-webkit-border-radius-bottomleft:  5px;
+	border-bottom-right-radius:     5px;
+	border-bottom-left-radius:      5px;
+}
+
+/**
+	Since we parse actual search page results and display those, remove whatever we don't want.
+	
+	Another way of doing this would be to use a custom url, like http://testsite.com/?ajax_search&s=
+	
+	Will be sent as http://testsite.com/?ajax_search&s=text
+	
+	The theme could then detect $_GET['ajax_search'] and display simpler results. Either way, it's up to you.
+**/
+div.threewp_ajax_search_results_content .entry-utility,
+div.threewp_ajax_search_results_content .meta-nav,
+div.threewp_ajax_search_results_content .entry-summary,
+div.threewp_ajax_search_results_content .entry-meta,
+div.threewp_ajax_search_results_content .entry-content
+{
+	display: none;
+}
+
+div.threewp_ajax_search_results_content ul li.item_selected,
+div.threewp_ajax_search_results_content ul li:hover
+{
+	background: #ccc;
+}
+
+/**
+	Search in progress!
+	
+	The container gets the class threewp_ajax_search_in_progress when it's busy doing a search.
+	This allows us to have fancy loading graphics, which I've taken from the normal Wordpress graphics.
+	
+	If you've blocked access to /wp-admin then it's your own fault your users aren't seeing moving graphics.
+*/ 
+.threewp_ajax_search_in_progress #s
+{
+	color: #ccc;
+}
+
+.threewp_ajax_search_in_progress #s
+{
+	background-image: url("../../../../wp-admin/images/loading.gif");
+	background-position: right;
+	background-repeat: no-repeat;
+}

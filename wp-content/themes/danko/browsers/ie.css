@@ -1,0 +1,23 @@
+.home-money-border {
+    top:-34px;
+}
+
+.home-money ul li {
+    padding:8px 0 8px 0;
+}
+.home-button-center {
+    padding:10px 0 8px 0;
+}
+
+.donate-form .red-center {
+    padding:8px 0 16px  0;
+}
+
+.donate-content {
+    padding:30px 0 15px 0;
+}
+
+.sidebar_widget_holder #s {
+    padding:11px 0 10px 10px !important;
+    height:20px !important;
+}

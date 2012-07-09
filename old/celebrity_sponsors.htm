@@ -1,0 +1,360 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<TITLE>Celebrity Sponsors</TITLE>
+<SCRIPT language=javascript>
+function checkFieldBlank(pstrID, pstrMissing, pstrDesc, pstrMessage)
+  { 
+	var ctrl, seltext, atsign, lastdot;
+	ctrl = document.getElementById(pstrID);
+	seltext = ctrl.value;
+	if (pstrMissing == 'N')
+	{
+		if (seltext == '0' | seltext.isNaN)
+		{
+			pstrMessage = addCommaText(pstrMessage, pstrDesc + ' requires a value')
+		}
+	} else if (pstrMissing == 'n')
+	{
+		if (seltext != '' && seltext.isNaN)
+		{
+			pstrMessage = addCommaText(pstrMessage, pstrDesc + ' must be a number if entered')
+		}
+	} else if (seltext == '' | seltext == pstrMissing) 
+	{
+		pstrMessage = addCommaText(pstrMessage, pstrDesc + ' is required')
+	} else if (pstrMissing == '@') 
+	{
+		atsign = seltext.indexOf('@');
+		lastdot = seltext.lastIndexOf('.');
+		if (atsign < 2) 
+		{
+			pstrMessage = addCommaText(pstrMessage, pstrDesc + ' must be in yourname@domain.com format')
+		} else if (seltext.indexOf(' ') != -1) 
+		{
+			pstrMessage = addCommaText(pstrMessage, pstrDesc + ' must not contain blank spaces')
+		} else if (seltext.indexOf(',') != -1) 
+		{
+			pstrMessage = addCommaText(pstrMessage, pstrDesc + ' must not contain commas')
+		} else if (seltext.indexOf(';') != -1) 
+		{
+			pstrMessage = addCommaText(pstrMessage, pstrDesc + ' must not contain semi-colons')
+		} else if (seltext.indexOf('..') != -1) 
+		{
+			pstrMessage = addCommaText(pstrMessage, pstrDesc + ' must be in yourname@domain.com format')
+		} else if (lastdot < atsign | lastdot < 5) 
+		{
+			pstrMessage = addCommaText(pstrMessage, pstrDesc + ' must be in yourname@domain.com format.')
+		} else if (lastdot == (seltext.length - 1)) 
+		{
+			pstrMessage = addCommaText(pstrMessage, pstrDesc + ' must be in yourname@domain.com format..')
+		}
+	}
+	return(pstrMessage);
+  }
+
+function addCommaText(pstrMessage, pstrAdd)
+{
+	if (pstrMessage != '') {
+		pstrMessage += ', ' + pstrAdd;
+	} else 
+	{
+		pstrMessage = pstrAdd;
+	}
+	return(pstrMessage);
+}
+
+function ensureTextNumeric(ptxtSource)
+{
+	var key = window.event.keyCode; 
+	if (key == 46 && ptxtSource.value.indexOf(".") == -1) {
+		window.event.returnValue = true; 
+	} else if (key == 45 && ptxtSource.value.length == 0) {
+		window.event.returnValue = true; 
+	} else if (key <48 || key >57)	{
+		window.event.returnValue = false; 
+	}
+}
+</SCRIPT>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+<style type="text/css">
+<!--
+.style4 {font-size: 14pt}
+a:link {
+	color: #003366;
+}
+a:visited {
+	color: #CC00CC;
+}
+a:hover {
+	color: #FFCC00;
+}
+a:active {
+	color: #00CC66;
+}
+.style9 {color: #FFFFFF}
+.style23 {color: #000000}
+.style24 {
+	color: #000000;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 16px;
+}
+.style25 {
+	font-size: 14px;
+	font-weight: bold;
+	font-style: italic;
+}
+.style27 {font-size: 16px; font-weight: bold; font-style: italic; }
+.style28 {font-size: 9px}
+-->
+</style>
+<FORM id=frmMain name=frmMain action=/Default.asp#showform method=post>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1"><LINK 
+href="index_files/sugar.css" type=text/css rel=stylesheet>
+
+
+<STYLE type=text/css>.footer {
+	FONT-SIZE: 9px; COLOR: #003366; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+</STYLE>
+
+<STYLE type=text/css>A:visited {
+	COLOR: #003366
+}
+</STYLE>
+
+<SCRIPT>
+function emailcheck(){
+  document.frmMain.emsProfilerEflyerSend19.checked = true;}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+</SCRIPT>
+
+<META content="MSHTML 6.00.2900.2722" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff leftMargin=0 background="images/back_main.jpg" 
+topMargin=0 
+onload="MM_preloadImages('./images/nav_home_1.gif','./images/nav_menu.gif','./images/nav_map.gif','./images/nav_reservations.gif','./images/nav_events.gif','./images/nav_photos.gif','./images/nav_special.gif','./images/nav_celebrity.gif','./images/nav_burial.gif','./images/nav_contest.gif','./images/nav_america.gif','./images/nav_vets.gif','images/images/nav_help.gif')" 
+marginwidth="0" marginheight="0">
+<TABLE cellSpacing=0 cellPadding=0 width=820 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD width="820" height=69 vAlign=top>
+      <TABLE cellSpacing=0 cellPadding=0 width=760 border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=center align=middle width=760 
+          background=index_files/SugarReef2_01.gif height=92><img src="images/images/header_banner_index.gif" width="819" height="94"></TD>
+        </TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD bgColor=#003366>
+      <TABLE cellSpacing=0 cellPadding=0 width=760 border=0>
+        <TBODY>
+        <TR>
+          <TD width=224><a href="how_to_help.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image31','','images/images/nav_help.gif',1)"><img src="images/images/nav_help_01.gif" alt="HOW YOU CAN HELP US VETS" name="Image31" width="224" height="38" border="0"></a></TD>
+          <TD background=index_files/plug_01.jpg>&nbsp;</TD>
+          <TD align=right background=index_files/plug_01.jpg><a href="about.htm"><img src="images/images/nav_about.gif" width="88" height="38"></TD>
+          <TD width=19 background=index_files/SugarReef2_07.gif><img src="images/plug_02.jpg" width="19" height="38"></TD>
+          <TD width=84 background=index_files/SugarReef2_07.gif><a href="current_back_issues.htm"><img src="images/images/nav_current.gif" width="113" height="38" border="0"></a>            </TD>
+          <TD width=19 background=index_files/SugarReef2_07.gif><img src="images/plug_03.jpg" width="19" height="38"></TD>
+          <TD width=122><a href="invitation.htm"><img src="images/images/nav_invitation.gif" width="122" height="38" border="0"></TD>
+          <TD width=19><img src="images/plug_04.jpg" width="19" height="38"></TD>
+          <TD width=141><a href="rates_circulation.htm"><img src="images/images/nav_rates.gif" width="141" height="38" border="0"></a></TD>
+          <TD width=12><img src="images/plug_05.jpg" width="12" height="38"></TD>
+        </TR></TBODY></TABLE></TD>
+  </TR>
+  <TR>
+    <TD>
+      <TABLE height=664 cellSpacing=0 cellPadding=0 width=820 border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=top width=72 background=index_files/column_01.jpg 
+          height=664><img src="images/images/bar_about.gif" width="70" height="1620"></TD>
+          <TD width="160" vAlign=top bgColor=#003366>
+            <SCRIPT language=JavaScript type=text/JavaScript>
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</SCRIPT>
+
+            <SCRIPT language=JavaScript type=text/JavaScript>
+<!--
+var win = null;
+function NewWindow(mypage,myname,w,h,scroll){
+LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
+TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
+settings ='height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
+win = window.open(mypage,myname,settings)
+}  
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</SCRIPT>
+
+                <TABLE borderColor=#291000 height=244 cellSpacing=0 cellPadding=0 
+            width=154 bgColor=#003366 border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=center align=middle><a href="corporate_services.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image32','','images/images/nav_home.gif',1)"><img src="images/images/nav_home_01.gif" alt="CORPORATE SERVICES" name="Image32" width="160" height="23" border="0"></a></TD>
+              </TR>
+              <TR>
+                <TD vAlign=center align=middle><a href="photo_galery_page_01.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image38','','images/images/nav_menu.gif',1)"><img src="images/images/nav_menu_01.gif" alt="PHOTO GALLERY" name="Image38" width="160" height="23" border="0"></a></TD>
+              </TR>
+              <TR>
+                <TD vAlign=center align=middle><a href="pilot_project.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image36','','images/images/nav_map.gif',1)"><img src="images/images/nav_map_01.gif" alt="PILOT PROJECT" name="Image36" width="160" height="23" border="0"></a></TD>
+              </TR>
+              <TR>
+                <TD vAlign=center align=middle><a href="vendors_network.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image37','','images/images/nav_reservations.gif',1)"><img src="images/images/nav_reservations_01.gif" alt="VENDORS NETWORK" name="Image37" width="160" height="23" border="0"></a></TD>
+              </TR>
+              <TR>
+                <TD vAlign=center align=middle><a href="tuition_aid.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image39','','images/images/nav_events.gif',1)"><img src="images/images/nav_events_01.gif" alt="TUITION AID" name="Image39" width="160" height="23" border="0"></a></TD>
+              </TR>
+              <TR>
+                <TD vAlign=center align=middle><a href="swim_team_bios.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image40','','images/images/nav_photos.gif',1)"><img src="images/images/nav_photos_01.gif" alt="SWIM TEAM BIOS" name="Image40" width="160" height="23" border="0"></a></TD>
+              </TR>
+              <TR>
+                <TD vAlign=center align=middle><a href="secure_donation.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image41','','images/images/nav_special.gif',1)"><img src="images/images/nav_special_01.gif" alt="SECURE E-DONATION" name="Image41" width="160" height="23" border="0"></a></TD>
+              </TR>
+				  <TR>
+               <TD vAlign=center align=middle><a href="celebrity_sponsors.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image42','','images/images/nav_celebrity.gif',1)"><img src="images/images/nav_celebrity_01.gif" alt="CELIBRITY SPONSOR" name="Image42" width="160" height="23" border="0"></a></TD>
+				  </TR>
+				  <TR>
+               <TD vAlign=center align=middle><a href="burial_fund.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image43','','images/images/nav_burial.gif',1)"><img src="images/images/nav_burial_01.gif" alt="BURIAL FUND" name="Image43" width="160" height="23" border="0"></a></TD>
+				  </TR>
+				  <TR>
+               <TD vAlign=center align=middle><a href="contest_rules.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image44','','images/images/nav_contest.gif',1)"><img src="images/images/nav_contest_01.gif" alt="CONTEST RULES" name="Image44" width="160" height="23" border="0"></a></TD>
+				  </TR>
+				  <TR>
+               <TD vAlign=center align=middle><a href="letter_to_america_01.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image45','','images/images/nav_america.gif',1)"><img src="images/images/nav_america_01.gif" alt="LETTER TO AMERICA" name="Image45" width="160" height="23" border="0"></a></TD>
+				  </TR><TR>
+               <TD vAlign=center align=middle><a href="letter_to_vets_01.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image46','','images/images/nav_vets.gif',1)"><img src="images/images/nav_vets_01.gif" alt="LETTER TO VETERANS" name="Image46" width="160" height="23" border="0"></a></TD>
+				   </TR><TR>
+               <TD vAlign=center align=middle><a href="order_a_poster.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image33','','images/images/nav_order.gif',1)"><img src="images/images/nav_order_01.gif" alt="ORDER A POSTER" name="Image33" width="160" height="23" border="0"></a></TD>
+				  </TR>
+				  <TR>
+               <TD vAlign=center align=middle><a href="sponsor_vet.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image34','','images/images/nav_sponsor_vet.gif',1)"><img src="images/images/nav_sponsor_vet_01.gif" alt="SPONSOR A VET" name="Image34" width="160" height="23" border="0"></a></TD>
+				  </TR><TR>
+               <TD vAlign=center align=middle><a href="helpful_links.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image35','','images/images/nav_helpful_links.gif',1)"><img src="images/images/nav_helpful_links_01.gif" alt="HELPFUL LINKS" name="Image35" width="160" height="23" border="0"></a></TD>
+				  </TR><TR>
+               <TD vAlign=center align=middle><a href="women_vets.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image30','','images/images/nav_women_vets.gif',1)"><img src="images/images/nav_women_vets_01.gif" alt="HOMELESS WOMEN VETS" name="Image30" width="160" height="23" border="0"></a></TD>
+				  </TR></TBODY></TABLE>
+				  <table width="50" border="0">
+              <tr>
+                <td><a href="http://www.guidestar.org/partners/networkforgood/donate.jsp?ein=11-3487629">
+				<img src="images/images/donatenowlogo4.gif" alt="DONATE NOW THROUGH NETWORK FOR GOOD" align="middle" width="140" height="53" border="0"></a></td>
+              </tr>
+            </table>
+            </TD>
+          <TD vAlign=top width=588 bgColor=#e6e1d8>
+            <TABLE cellSpacing=15 cellPadding=0 width=588 border=0>
+              <TBODY>
+              <TR>
+                <TD width="558" height="643" vAlign=top background="images/images/.gif" bgcolor="#FFFFFF" class=body>
+                  <p class="style4">
+<TABLE>
+          <TD width=499 height="610" vAlign=top bgColor=#e6e1d8 class="style9"><p align="center" class="style24"> &ldquo;Operation Celebrity Autograph&rdquo; </p>
+              <p align="center" class="style23"> <span class="style25">An open letter to America&rsquo;s celebrities from America&rsquo;s homeless Veterans. </span></p>
+              <p align="justify" class="style23">Dear Celebrity America,<br>
+                America&rsquo;s Armed Forces Veterans are asking for your help. We are seeking sponsors for our &ldquo; International Swimming Event Promotion &rdquo;, featuring our homeless, disabled Vietnam Veteran Swimmer, who will attempt to become, The World&rsquo;s First Disabled Person To Swim Around Manhattan Island , in support of our Corporate Mandate, help for America&rsquo;s 1 million homeless Veterans.<br> 
+                Our promotional event is intended to bring America&rsquo;s attention to &ldquo;the problem of homelessness among America&rsquo;s Armed Forces Veterans.&rdquo; </p>
+              <p align="justify" class="style23"><br>
+                  Our corporation, The Homeless American Veterans Self-Help Initiative, Inc., is a non-profit, 501 (c) (3) Charitable Organization of America&rsquo;s Armed Forces Veterans. To verify, toll free, call I.R.S. Hotline, 1.877.829.5500. We are also registered with the NY State Attorney General&rsquo;s Office, Charities Bureau, 2212.416.8400. Our Certificates of Legal Authority are available for your inspection, upon request. (E-mail, HelpUsVets @Yahoo.com .)</p>
+              <p align="justify" class="style23"><br>
+                  Our mission, as outlined on our website, www. HelpUsVets.org , is to help America&rsquo;s homeless Veterans obtain abandoned, tax delinquent residential properties, with funds provided by our corporation&rsquo;s promotional activities, and renovating them, utilizing the labor and expertise of homeless Veterans , who will then take possession of the newly renovated property, with their families, as the new owner/occupants .</p>
+              <p align="justify" class="style23"><br>
+                  We are asking all of America&rsquo;s celebrities, professional athletes, sports teams, entertainers, artists, and the rich and famous, to Help Us Vets, by joining our celebrity autograph project, &ldquo; Operation Celebrity Autograph .&rdquo; <br>
+                  Your participation will help begin a new life for a homeless Veteran and his family, just by adding your autograph , along with other celebrities, to our &ldquo;Vietnam Veterans Commemorative Poster, entitled, &ldquo;A Hero&rsquo;s Heaven.&rdquo;</p>
+              <p align="justify" class="style23"><br>
+                  Each poster is imprinted with the name of a KIA (Killed In Action) Vietnam Veteran, who gave his life in service to America. It has been <span class="style27">hand-rubbed</span> directly from &ldquo;The National Vietnam Veterans Memorial Wall&rdquo;, in Washington, D.C., by the first group of homeless Veterans who will benefit from your help. Each poster is embossed with our Official Corporate Seal and comes with a Certificate of Authenticity. Our objective is to auction the professionally framed, mounted and autographed posters to help raise the funds to acquire and renovate our &ldquo; Pilot Project &rdquo;, as outlined on our website. </p>
+              <p align="justify" class="style23">The successful completion of our Pilot Project will Help Us Vets expand our &ldquo;homeless Veterans self-help housing initiative&rdquo; to other cities across America, to help many other homeless Veterans.<br>
+                  Please E-mail, HelpUsVets @Yahoo.com to arrange a convenient time and place for us to meet and discuss the details of your participation in &ldquo; <strong><em>Operation Celebrity</em></strong> <strong><em>Autograph</em></strong> .&rdquo;</p>
+              <p align="justify" class="style23">Your help is vital to the success of our mission. <br>
+                  Thank you for your support of America&rsquo;s homeless Veterans.<br>
+                  James D. Sewell, President,<br>
+                  The Homeless American Veterans Self-Help Initiative, Inc.<br>
+                                <strong></strong></p>
+              <!--url's used in the movie-->
+<!--text used in the movie-->
+                </TABLE><TABLE>
+                    <marquee style="font-size: 18pt; font-style: italic; font-weight: bold" width="530" height="10">
+                    <span class="style9"> Win!!!
+  An all expenses paid Luxury Vacation for 2, to anywhere in the world you served
+  in the military. (Was it Hawaii, Europe, Vietnam, the North Pole.)&nbsp; or
+  Win!!! $10,000 Grand Prize Drawing plus other cash prizes. Click on
+  Contest/Rules. </span>
+                    </marquee>
+     
+				  </TABLE>
+                  <div align="center"><p class="style9">&nbsp;</p>
+                    </div></TD>
+        </TR>
+              </TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD bgColor=#003366>
+      <TABLE height=169 cellSpacing=5 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR vAlign=top align=left>
+          <TD width=268 height="159" class=footer><FONT color=#ffffff><img src="images/war_01.jpg" width="249" height="140">
+          </FONT></TD>
+          <TD width="263" align=left vAlign=top class=footer>            <img src="images/war_02.jpg" width="249" height="140"><BR>
+       
+            </TD>
+          <TD width="253" align=left vAlign=top class=footer>            <img src="images/war_03.jpg" width="249" height="140"><BR>
+            </P></TD>
+        </TR>
+        </TBODY></TABLE></TD></TR>
+  <TR bgColor=#003366>
+    <TD class=footer>
+      <TABLE cellSpacing=5 cellPadding=0 width=760 border=0>
+        <TBODY>
+        <TR>
+          <TD height="38" class=footer>
+            <DIV align=center><A href="http://www..com/unsubscribe.asp" 
+            target=_blank><FONT color=#ffffff>     <br>
+              site map </FONT></A><FONT 
+            color=#ffffff>• <A 
+            href="http://www.helpusvets.org/privacy.asp" 
+            target=_blank><FONT color=#ffffff>privacy policy</FONT></A> • ©2005 
+            <A href="http://www..com/" target=_blank></A>• <A 
+            href="http://www..com/" target=_blank><FONT 
+            color=#ffffff>site credits</FONT></A> </FONT><FONT 
+            color=#ffffff></FONT><BR>
+            </FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD height="19">&nbsp;</TD>
+  </TR></TBODY></TABLE>
+
+</BODY></HTML>

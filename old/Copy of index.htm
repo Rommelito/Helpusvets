@@ -1,0 +1,426 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<TITLE>Index</TITLE>
+<SCRIPT language=javascript>
+function checkFieldBlank(pstrID, pstrMissing, pstrDesc, pstrMessage)
+  { 
+	var ctrl, seltext, atsign, lastdot;
+	ctrl = document.getElementById(pstrID);
+	seltext = ctrl.value;
+	if (pstrMissing == 'N')
+	{
+		if (seltext == '0' | seltext.isNaN)
+		{
+			pstrMessage = addCommaText(pstrMessage, pstrDesc + ' requires a value')
+		}
+	} else if (pstrMissing == 'n')
+	{
+		if (seltext != '' && seltext.isNaN)
+		{
+			pstrMessage = addCommaText(pstrMessage, pstrDesc + ' must be a number if entered')
+		}
+	} else if (seltext == '' | seltext == pstrMissing) 
+	{
+		pstrMessage = addCommaText(pstrMessage, pstrDesc + ' is required')
+	} else if (pstrMissing == '@') 
+	{
+		atsign = seltext.indexOf('@');
+		lastdot = seltext.lastIndexOf('.');
+		if (atsign < 2) 
+		{
+			pstrMessage = addCommaText(pstrMessage, pstrDesc + ' must be in yourname@domain.com format')
+		} else if (seltext.indexOf(' ') != -1) 
+		{
+			pstrMessage = addCommaText(pstrMessage, pstrDesc + ' must not contain blank spaces')
+		} else if (seltext.indexOf(',') != -1) 
+		{
+			pstrMessage = addCommaText(pstrMessage, pstrDesc + ' must not contain commas')
+		} else if (seltext.indexOf(';') != -1) 
+		{
+			pstrMessage = addCommaText(pstrMessage, pstrDesc + ' must not contain semi-colons')
+		} else if (seltext.indexOf('..') != -1) 
+		{
+			pstrMessage = addCommaText(pstrMessage, pstrDesc + ' must be in yourname@domain.com format')
+		} else if (lastdot < atsign | lastdot < 5) 
+		{
+			pstrMessage = addCommaText(pstrMessage, pstrDesc + ' must be in yourname@domain.com format.')
+		} else if (lastdot == (seltext.length - 1)) 
+		{
+			pstrMessage = addCommaText(pstrMessage, pstrDesc + ' must be in yourname@domain.com format..')
+		}
+	}
+	return(pstrMessage);
+  }
+
+function addCommaText(pstrMessage, pstrAdd)
+{
+	if (pstrMessage != '') {
+		pstrMessage += ', ' + pstrAdd;
+	} else 
+	{
+		pstrMessage = pstrAdd;
+	}
+	return(pstrMessage);
+}
+
+function ensureTextNumeric(ptxtSource)
+{
+	var key = window.event.keyCode; 
+	if (key == 46 && ptxtSource.value.indexOf(".") == -1) {
+		window.event.returnValue = true; 
+	} else if (key == 45 && ptxtSource.value.length == 0) {
+		window.event.returnValue = true; 
+	} else if (key <48 || key >57)	{
+		window.event.returnValue = false; 
+	}
+}
+</SCRIPT>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+<style type="text/css">
+<!--
+.style4 {font-size: 14pt}
+a:link {
+	color: #0000CC;
+}
+a:visited {
+	color: #CC00CC;
+}
+a:hover {
+	color: #FFCC00;
+}
+a:active {
+	color: #00CC66;
+}
+-->
+</style>
+<FORM id=frmMain name=frmMain action=/Default.asp#showform method=post>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1"><LINK 
+href="index_files/sugar.css" type=text/css rel=stylesheet>
+<SCRIPT language=javascript src="index_files/sugar.js"></SCRIPT>
+
+<SCRIPT language=javascript src="index_files/pop_center.js"></SCRIPT>
+
+<STYLE type=text/css>.footer {
+	FONT-SIZE: 9px; COLOR: #003366; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+</STYLE>
+
+<STYLE type=text/css>A:visited {
+	COLOR: #003366
+}
+</STYLE>
+
+<SCRIPT>
+function emailcheck(){
+  document.frmMain.emsProfilerEflyerSend19.checked = true;}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+</SCRIPT>
+
+<META content="MSHTML 6.00.2900.2722" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff leftMargin=0 background="images/back_main.jpg" 
+topMargin=0 
+onload="MM_preloadImages('./images/nav_home_1.gif','./images/nav_menu.gif','./images/nav_map.gif','./images/nav_reservations.gif','./images/nav_events.gif','./images/nav_photos.gif','./images/nav_special.gif','./images/nav_celebrity.gif','./images/nav_burial.gif','./images/nav_contest.gif','./images/nav_america.gif','./images/nav_vets.gif')" 
+marginwidth="0" marginheight="0"><A href="index.htm" name=showform>
+<TABLE cellSpacing=0 cellPadding=0 width=820 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD width="820" height=69 vAlign=top>
+      <TABLE cellSpacing=0 cellPadding=0 width=760 border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=center align=middle width=760 
+          background=index_files/SugarReef2_01.gif height=92><img src="images/images/header_banner_helpful.gif" width="824" height="95"></TD>
+        </TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD bgColor=#003366>
+      <TABLE cellSpacing=0 cellPadding=0 width=760 border=0>
+        <TBODY>
+        <TR>
+          <TD width=224><img src="images/link_01.jpg" width="224" height="38"></TD>
+          <TD background=index_files/plug_01.jpg>&nbsp;</TD>
+          <TD align=right background=index_files/plug_01.jpg><a href="about.htm"><img src="images/images/nav_about.gif" width="88" height="38"></TD>
+          <TD width=19 background=index_files/SugarReef2_07.gif><img src="images/plug_02.jpg" width="19" height="38"></TD>
+          <TD width=84 background=index_files/SugarReef2_07.gif><a href="current_back_issues.htm"><img src="images/images/nav_current.gif" width="113" height="38" border="0"></a>            </TD>
+          <TD width=19 background=index_files/SugarReef2_07.gif><img src="images/plug_03.jpg" width="19" height="38"></TD>
+          <TD width=122><a href="invitation.htm"><img src="images/images/nav_invitation.gif" width="122" height="38" border="0"></TD>
+          <TD width=19><img src="images/plug_04.jpg" width="19" height="38"></TD>
+          <TD width=141><a href="rates_circulation.htm"><img src="images/images/nav_rates.gif" width="141" height="38" border="0"></a></TD>
+          <TD width=12><img src="images/plug_05.jpg" width="12" height="38"></TD>
+        </TR></TBODY></TABLE></TD>
+  </TR>
+  <TR>
+    <TD>
+      <TABLE height=664 cellSpacing=0 cellPadding=0 width=825 border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=top width=70 background=index_files/column_01.jpg 
+          height=664><img src="images/images/bar_index.gif" width="70" height="664"></TD>
+          <TD width="160" vAlign=top bgColor=#003366>
+            <SCRIPT language=JavaScript type=text/JavaScript>
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</SCRIPT>
+
+            <SCRIPT language=JavaScript type=text/JavaScript>
+<!--
+var win = null;
+function NewWindow(mypage,myname,w,h,scroll){
+LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
+TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
+settings ='height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
+win = window.open(mypage,myname,settings)
+}  
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</SCRIPT>
+
+            <TABLE borderColor=#291000 height=244 cellSpacing=0 cellPadding=0 
+            width=154 bgColor=#003366 border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=center align=middle><A 
+                  onmouseover="MM_swapImage('home','','./images/nav_home.gif',1)" 
+                  onmouseout=MM_swapImgRestore() 
+                  href="corporate_services.htm"><IMG id=home 
+                  height=23 alt="> Corporate Services" src="./images/nav_home_01.gif" 
+                  width=160 border=0 name=home></A></TD></TR>
+              <TR>
+                <TD vAlign=center align=middle><A 
+                  onmouseover="MM_swapImage('menu','','./images/nav_menu.gif',1)" 
+                  onmouseout=MM_swapImgRestore() 
+                  href="photo_gallery.htm"><IMG id=menu 
+                  height=23 alt="> Photo Gallery" src="./images/nav_menu_01.gif" 
+                  width=160 border=0 name=menu></A></TD>
+              </TR>
+              <TR>
+                <TD vAlign=center align=middle><A 
+                  onmouseover="MM_swapImage('map','','./images/nav_map.gif',1)" 
+                  onmouseout=MM_swapImgRestore() 
+                  href="http://www.sugarreef.com/map.htm"><IMG id=map height=23 
+                  alt="> Pilot Project" src="./images/nav_map_01.gif" width=160
+                  border=0 name=map></A></TD>
+              </TR>
+              <TR>
+                <TD vAlign=center align=middle><A 
+                  onmouseover="MM_swapImage('res','','./images/nav_reservations.gif',1)" 
+                  onmouseout=MM_swapImgRestore() 
+                  href="vendors_network.htm"><IMG id=res height=23 
+                  alt="> Vendors Network" src="./images/nav_reservations_01.gif" 
+                  width=160 border=0 name=res></A></TD>
+              </TR>
+              <TR>
+                <TD vAlign=center align=middle><A 
+                  onmouseover="MM_swapImage('events','','./images/nav_events.gif',1)" 
+                  onmouseout=MM_swapImgRestore() 
+                  href="http://www.sugarreef.com/events.htm"><IMG id=events 
+                  height=23 alt="> Tuition Aid" src="./images/nav_events_01.gif" 
+                  width=160 border=0 name=events></A></TD></TR>
+              <TR>
+                <TD vAlign=center align=middle><A 
+                  onmouseover="MM_swapImage('photos','','./images/nav_photos.gif',1)" 
+                  onmouseout=MM_swapImgRestore() 
+                  href="swim_team_bios.htm"><IMG height=22 
+                  alt="> Swim Team Bio's" src="./images/nav_photos_01.gif" width=160 
+                  border=0 name=photos></A></TD></TR>
+              <TR>
+                <TD vAlign=center align=middle><A 
+                  onmouseover="MM_swapImage('special','','./images/nav_special.gif',1)" 
+                  onmouseout=MM_swapImgRestore() 
+                  href="http://www.sugarreef.com/photos.htm/"><IMG id=special 
+                  height=23 alt="> Secure-E-Donation" src="./images/nav_special_01.gif" 
+                  width=160 border=0 name=special></A></TD></TR>
+				  <TR>
+               <TD vAlign=center align=middle><A 
+                  onmouseover="MM_swapImage('celebrity','','./images/nav_celebrity.gif',1)" 
+                  onmouseout=MM_swapImgRestore() 
+                  href="http://www.sugarreef.com/photos.htm/"><IMG id=celebrity 
+                  height=23 alt="> Celebrity Sponsors" src="./images/nav_celebrity_01.gif" 
+                  width=160 border=0 name=celebrity></A></TD>
+				  </TR>
+				  <TR>
+               <TD vAlign=center align=middle><A 
+                  onmouseover="MM_swapImage('burial','','./images/nav_burial.gif',1)" 
+                  onmouseout=MM_swapImgRestore() 
+                  href="burial_fund.htm"><IMG id=burial 
+                  height=23 alt="> Burial Fund" src="./images/nav_burial_01.gif" 
+                  width=160 border=0 name=burial></A></TD>
+				  </TR>
+				  <TR>
+               <TD vAlign=center align=middle><A 
+                  onmouseover="MM_swapImage('contest','','./images/nav_contest.gif',1)" 
+                  onmouseout=MM_swapImgRestore() 
+                  href="http://www.sugarreef.com/photos.htm/"><IMG id=contest 
+                  height=23 alt="> Contest/Rules" src="./images/nav_contest_01.gif" 
+                  width=160 border=0 name=contest></A></TD>
+				  </TR>
+				  <TR>
+               <TD vAlign=center align=middle><A 
+                  onmouseover="MM_swapImage('america','','./images/nav_america.gif',1)" 
+                  onmouseout=MM_swapImgRestore() 
+                  href="http://www.sugarreef.com/photos.htm/"><IMG id=america 
+                  height=23 alt="> Letter To America" src="./images/nav_america_01.gif" 
+                  width=160 border=0 name=america></A></TD>
+				  </TR><TR>
+               <TD vAlign=center align=middle><A 
+                  onmouseover="MM_swapImage('vets','','./images/nav_vets.gif',1)" 
+                  onmouseout=MM_swapImgRestore() 
+                  href="letter_to_vets.htm/"><img id=vets 
+                  height=23 alt="> Letter To Veterans" src="./images/nav_vets_01.gif" 
+                  width=160 border=0 name=vets></A></TD>
+				  </TR><TR>
+               <TD vAlign=center align=middle><a href="order_a_poster.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image27','','images/images/nav_order.gif',1)"><img src="images/images/nav_order_01.gif" alt="Order A Poster" name="Image27" width="160" height="23" border="0"></a></TD>
+				  </TR>
+				  <TR>
+               <TD vAlign=center align=middle><a href="sponsor_vet.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image28','','images/images/nav_sponsor_vet.gif',1)"><img src="images/images/nav_sponsor_vet_01.gif" alt="Sponsor A Vet" name="Image28" width="160" height="23" border="0"></a></TD>
+				  </TR><TR>
+               <TD vAlign=center align=middle><a href="helpful_links.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image29','','images/images/nav_helpful_links.gif',1)"><img src="images/images/nav_helpful_links_01.gif" alt="Helpful Linnks" name="Image29" width="160" height="23" border="0"></a></TD>
+				  </TR><TR>
+               <TD vAlign=center align=middle><a href="women_vets.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image30','','images/images/nav_women_vets.gif',1)"><img src="images/images/nav_women_vets_01.gif" alt="Homeless Women Vets" name="Image30" width="160" height="23" border="0"></a></TD>
+				  </TR></TBODY></TABLE>
+            </TD>
+          <TD vAlign=top width=595 bgColor=#e6e1d8>
+            <TABLE cellSpacing=15 cellPadding=0 width=573 border=0>
+              <TBODY>
+              <TR>
+                <TD width="543" height="636" vAlign=top background="images/images/background.g" bgcolor="#FFFFFF" class=body>
+                  <p class="style4">
+<TABLE>
+          <TD vAlign=top width=536 bgColor=#e6e1d8>
+           <!--url's used in the movie-->
+<!--text used in the movie-->
+                  <p align="center"><em><strong>Contest Rules</strong></em></p>
+				  <p> In appreciation for your support of our self-help efforts, we are sponsoring a &ldquo;Grand Prize Drawing&rdquo;, in which you can win:<br>
+				    1-An all expenses paid luxury vacation/2, to anywhere n the world you served in the military, or,<br>
+				    2-a $10,000 Grand Prize and other cash prizes.<br>
+				    There is nothing to buy. Four complimentary raffle tickets are inside each copy of our news-magazine, &ldquo;The Voices Of America&rsquo;s Homeless Veterans.&rdquo; 400,000 tickets, (100,000/issue) are distributed each quarter. Winners are randomly drawn by our swimmer, verified and awarded from all tickets postmarked by 12-31-06. All Prizes Guaranteed. All Federal, sate and local laws apply. Winners must pay all applicable taxes. Void where prohibited. Employees/vendors not eligible. For a list of prize winners E-mail, HelpUsVets@Yahoo.com. Prizes must be claimed within 3 months from date of drawing and are not transferable. Winners must sign a consent form agreeing to be photographed with our sponsors.</p>
+				  <p>
+                      <marquee style="font-size: 18pt; font-style: italic; font-weight: bold" width="530" height="20">
+                      </marquee>
+                  </p>
+          </TABLE>
+                  </p>
+                </TD>
+              </TR>
+              </TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD bgColor=#003366>
+      <TABLE height=169 cellSpacing=5 cellPadding=0 width="99%" border=0>
+        <TBODY>
+        <TR vAlign=top align=left>
+          <TD width=274 height="159" class=footer><FONT color=#ffffff><img src="images/war_01.jpg" width="249" height="140">
+          </FONT></TD>
+          <TD width="269" align=left vAlign=top class=footer>            <img src="images/war_02.jpg" width="249" height="140"><BR>
+       
+            </TD>
+          <TD width="249" align=left vAlign=top class=footer>            <img src="images/war_03.jpg" width="249" height="140"><BR>
+            </P></TD>
+        </TR>
+        </TBODY></TABLE></TD></TR>
+  <TR bgColor=#003366>
+    <TD class=footer>
+      <TABLE cellSpacing=5 cellPadding=0 width=760 border=0>
+        <TBODY>
+        <TR>
+          <TD height="38" class=footer>
+            <DIV align=center><A href="http://www..com/unsubscribe.asp" 
+            target=_blank><FONT color=#ffffff>     <br>
+              site map </FONT></A><FONT 
+            color=#ffffff>• <A 
+            href="http://www.helpusvets.org/privacy.asp" 
+            target=_blank><FONT color=#ffffff>privacy policy</FONT></A> • ©2005 
+            <A href="http://www..com/" target=_blank></A>• <A 
+            href="http://www..com/" target=_blank><FONT 
+            color=#ffffff>site credits</FONT></A> </FONT><FONT 
+            color=#ffffff></FONT><BR>
+            </FONT></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD height="19">&nbsp;</TD>
+  </TR></TBODY></TABLE>
+</A>
+<A name=showform>
+<SCRIPT language=javascript>
+function checkForm()
+  {
+  var strMessage;
+  strMessage = '';
+
+  strMessage = checkFieldBlank('emsProfilerEmail', '@', 'Email', strMessage);
+	if (strMessage != '')
+	{
+		alert(unescape('Sorry, the form cannot be completed because:\n' + strMessage + '.'));
+		return(false);
+	} else
+	{
+		form = document.getElementById('frmMain');
+		form.submit();
+		return(true);
+	}
+  }
+</SCRIPT>
+
+<SCRIPT language=javascript>
+function removeDuplicateFields()
+{
+	var elements, elementCur, elementHidden, strId;
+	//For each field in frmMain, look for a matching hidden text one id+_h.
+	elements = document.forms["frmMain"].elements;
+	for ( var i = 0; i < elements.length; i ++ )
+	{
+		elementCur = elements[i];
+		strId = elementCur.id;
+		if (strId.substr(0, 11) == 'emsProfiler' && strId.substr(strId.length - 2, 2) != '_h')
+		{
+			try
+			{
+				//Check for passed-on value from previous form, as real input takes priority.
+				elementHidden = document.getElementById(strId + '_h')
+				//Set html name so value doesn't cause form control array on submit.
+				elementHidden.name = 'emsCancelled';
+			} catch(e) {};
+		}
+	}
+}
+
+//Call function at end of page load.
+removeDuplicateFields()
+</SCRIPT>
+</A>
+</FORM>
+</BODY></HTML>

@@ -1,0 +1,13 @@
+.home-money-border {
+    top:-36px !important;
+}
+.blog-title {
+    width:67%;    
+}
+.blog-title-date span {
+    width:33%;
+}
+
+.default-center, .yellow-center, .green-center, .brown-center {
+    padding:9px 5px 8px;
+}

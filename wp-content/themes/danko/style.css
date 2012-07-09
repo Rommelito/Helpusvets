@@ -1,0 +1,16 @@
+/*
+Theme Name: Danko
+Support URI: http://www.themeskingdom.com/support
+Description: Danko, a premium Wordpress theme by Themes Kingdom. Wordpress conversion by Themes Kingdom.
+Author: Themes Kingdom
+Author URI: http://www.themeskingdom.com/support/
+Version: 1.0
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Theme URI: http://www.themeskingdom.com/
+Tags: blue, donation, danko
+*/
+
+
+@import url("style/reset.css");
+@import url("style/style.css");
