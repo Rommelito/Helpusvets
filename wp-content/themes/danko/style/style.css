@@ -15,12 +15,12 @@ body{	background: url(../style/img/bg.png) repeat;
 
 /*--- h1, h2, h3, h4, h5---*/
 h1{
-    color: #748c91;
+    color: #505961;
     font-size: 127px;
     font-family: 'Helvetica';}
 
 h2{
-    color: #748c91;
+    color: #505961;
     font-size: 24px;
     font-family: 'Helvetica';}
 
@@ -367,7 +367,7 @@ h3{
     overflow:hidden;}
 
 .cell_title h2 a {
-    color:#748C91;
+    color:#505961;
     line-height:30px;}
 
 .cell_text{
@@ -437,17 +437,12 @@ display:block;
 
 .footer-content{
     width: 100%;
-    border-top: 1px solid #222222;
+    border-top: 1px dashed #bbb;
     padding-top: 35px; }
 
-.footer-copy{
-    width: 700px;
-    float:left;
-    color: #222222;
-    font-size: 12px;
-    font-family: 'Helvetica';}
+.footer-copy{    width: 700px;    float:left;    color: #aaa;    font-size: 12px;    font-family: 'Helvetica';}
 
-.footer-copy a{color: #748c91;}
+.footer-copy a{color: #505961;}
 
 .footer-copy a:hover{color: #F3553D;}
 
@@ -617,7 +612,7 @@ display:block;
     width:100%;}
 
 .other-content-side {
-    color: #748C91;
+    color: #505961;
     float: left;
     font-family: 'Helvetica', Arial, sans-serif;
     font-size: 12px;
@@ -648,7 +643,7 @@ h3.heading {
     float:left;
     clear:both;
     font-size:24px;
-    color:#748C91;}
+    color:#505961;}
 
 h4.heading {
     margin:20px 0 1px 0;
@@ -725,7 +720,7 @@ h5.heading {
 
 .donate-text{
     width: 100%;
-    color: #748C91;
+    color: #505961;
     float: left;
     font-family: 'Helvetica';
     font-size: 12px;
@@ -743,7 +738,7 @@ h5.heading {
     width: 100%;
     margin: 0;
     padding: 0;
-    color: #748c91;
+    color: #505961;
     font-size: 12px;
     font-family: 'Helvetica';
     line-height: 23px;}
@@ -832,7 +827,7 @@ h5.heading {
 .page-404 p{
     margin-bottom: 25px;
     text-align: center;
-    color: #748c91;
+    color: #505961;
     font-family: 'Helvetica';
     font-size: 12px;}
 
@@ -870,7 +865,7 @@ div.comment-start {
     margin: 0 0 15px 0;
     border-top: 1px solid #91a8ad;
     border-bottom: 1px solid #91a8ad;
-    color: #748C91;
+    color: #505961;
     font-family: 'Helvetica';
     font-size: 24px;
     float:left;
@@ -964,7 +959,7 @@ div.comment-start {
 
 .comment-start-text p{
     float: left;
-    color: #748c91;
+    color: #505961;
     font-size: 12px;
     font-family: 'Helvetica';
     line-height: 20px;}
@@ -1034,13 +1029,7 @@ div.comment-start {
     margin-bottom: 45px;
     width:290px;}
 
-.sidebar_widget_holder h3{
-    float: left;
-    width: 100%;
-    max-height:44px;
-    overflow:hidden;
-    line-height:23px;
-    margin: 0 0 30px 0;}
+.sidebar_widget_holder h3 {    float: left;    width: 100%;    max-height:44px;    overflow:hidden;    line-height:23px;    margin: 0 0 5px;}
 
 .sidebar_widgettitle a {
     color:#4E2D28;}
@@ -1103,7 +1092,7 @@ display:none;}
 
 /*  TEXT WIDGET */
 .textwidget {
-    color: #748C91;
+    color: #505961;
     font-family: 'Helvetica';
     font-size: 12px;
     line-height: 20px;}
@@ -1219,7 +1208,7 @@ display:none;}
 .sidebar_widget_holder .textwidget p{
     float: left;
     width: 100%;
-    color: #748c91;
+    color: #505961;
     font-size: 12px;
     font-family: 'Helvetica';
     line-height: 20px;}
@@ -1341,7 +1330,7 @@ table th {
      color:#4E2D28;}
 
 table td a {
-    color:#748C91;}
+    color:#505961;}
 
 
 /*----------//// OUR ACTIONS BLOG \\\\-------------*/
@@ -1372,7 +1361,7 @@ blog-content-single {
 
 .blog-title a{
     float: left;
-    color: #748c91;
+    color: #505961;
     font-size: 24px;
     font-family: 'Helvetica';
     font-weight: bold;
@@ -1380,7 +1369,7 @@ blog-content-single {
     text-align:left;}
 
 .blog-title {
-    color: #748C91;
+    color: #505961;
     float: left;
     font-family: 'Helvetica';
     font-size: 24px;
@@ -1408,7 +1397,7 @@ blog-content-single {
 .blog-actions-text{
     width: 100%;
     max-height: 140px;
-    color: #748c91;
+    color: #505961;
     font-size: 12px;
     font-family: 'Helvetica';
     line-height: 20px;
@@ -1447,7 +1436,7 @@ blog-content-single {
 .blog-images-text{
     width: 336px;
     height: 157px;
-    color: #748c91;
+    color: #505961;
     font-size: 12px;
     font-family: 'Helvetica';
     line-height: 20px;
@@ -1457,7 +1446,7 @@ blog-content-single {
 
 .blog-images-text-single {
     width: 639px;
-    color: #748c91;
+    color: #505961;
     font-size: 12px;
     font-family: 'Helvetica';
     line-height: 20px;}
@@ -1473,18 +1462,18 @@ blog-content-single {
     padding:9px 0 0 0;
     font-family:Helvetica, Arial, sans-serif;
     font-weight:bold;
-    color:#748C91;
+    color:#505961;
     font-size:14px;
     margin:0 3px 0 0;}
 
 .pagination-buttons a {
-color:#748c91;}
+color:#505961;}
 
 .next, .prev {
     padding:9px 10px 0 10px;}
 
 .active-pagination-buttons {
-    background-color:#748C91;
+    background-color:#505961;
     color:#FCF8EA;}
 
 .button-404 a {
@@ -1497,7 +1486,7 @@ color:#748c91;}
 .comment-form-left {
     font-size:13px;
     margin:10px 0 10px 0;
-    color:#748C91;}
+    color:#505961;}
 
 .comment-form-left a {
     color:#4E2D28;}
@@ -1579,4 +1568,4 @@ color:#F3553D !important;
 
 .no-margin {
     margin-bottom:0!important;
-}/* Submit button */.contact_submit {	background: #293069 url(/img/---.png) repeat-x;	display: inline-block;	margin: 15px 0px;	padding: 5px 10px 6px;	color: #ccc;	text-decoration: none;	font-size: 24px;	font-weight: bold;	line-height: 1;	-moz-border-radius: 5px;	-webkit-border-radius: 5px;	-moz-box-shadow: 0 1px 3px #999;	-webkit-box-shadow: 0 1px 3px #999;	border-bottom: 1px solid #222;	position: relative;	cursor: pointer; }.contact_submit:hover {	color: #fff;}
+}/* Submit button */.contact_submit {	background: -moz-linear-gradient(center top , #E21F0E, #941409) repeat scroll 0 0 transparent;	display: inline-block;	margin: 15px 0px;	padding: 5px 10px 6px;	color: #FADDDE;	text-decoration: none;	font-size: 24px;	font-weight: bold;	line-height: 1;	-moz-border-radius: 5px;	-webkit-border-radius: 5px;	-moz-box-shadow: 0 1px 3px #999;	-webkit-box-shadow: 0 1px 3px #999;	border: 1px solid #222;	border-radius: 0.1em 0.1em 0.1em 0.1em;	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);	position: relative;	cursor: pointer; }.contact_submit:hover {	color: #fff;}
