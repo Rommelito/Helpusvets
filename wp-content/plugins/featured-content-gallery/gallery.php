@@ -52,7 +52,7 @@
 	  }
 	  else { ?>
 	    <?php $temp_query = $wp_query; ?>
-	    <?php query_posts('category_name=' . get_option('gallery-category') . '&showposts=' . get_option('gallery-items') . '&order=ASC'); ?>
+	    <?php $categoryToUse = 'category_name=' . get_option('gallery-category');			if (isset($catidforgallery) && is_numeric($catidforgallery)) {				$categoryToUse = 'cat=' . $catidforgallery;			}			query_posts($categoryToUse . '&showposts=' . get_option('gallery-items') . '&order=ASC'); ?>
 	    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	       <div class="imageElement">
 	         <h2><?php the_title() ?></h2>

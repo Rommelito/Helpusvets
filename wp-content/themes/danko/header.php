@@ -1,41 +1,10 @@
-<?php if (!session_id())
-    session_start();
-
-/**
- * @package WordPress
- * @subpackage Danko
- */
-?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-
-        <title><?php if(!empty($data['seo_title'])) { echo $data['seo_title']; } else { wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); }?></title>
-	<meta name="keywords" content="<?php if(!empty($data['seo_keywords'])) { echo $data['seo_keywords'];} ?>" />
-	<meta name="description" content="<?php if(!empty($data['seo_description'])) { echo $data['seo_description']; } else { bloginfo('description'); }?>" />
-	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-
-
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-<link rel="stylesheet" href="<?php echo get_template_directory_uri().'/script/pirobox/css/demo5/style.css';?>" type="text/css" media="screen" />
-<link rel="stylesheet" href="<?php echo get_template_directory_uri().'/script/tabs/ui-lightness/jquery-ui-1.8.16.custom.css';?>" type="text/css" media="screen" />
-
-
-<link rel="stylesheet" media="screen" href="<?php echo get_template_directory_uri() . "/script/superfish/superfish.css"; ?>" type="text/css"/>
-<link rel="stylesheet" media="screen" href="<?php echo get_template_directory_uri() . "/script/pirobox/css/demo5/style.css"; ?>" type="text/css"/>
-<link rel="stylesheet" href="<?php echo get_template_directory_uri()."/script/BeautifulNavigation/css/style.css" ?>" type="text/css" media="screen"/>
-<link rel="stylesheet" href="<?php echo get_template_directory_uri()."/script/hover-img/css/mosaic.css" ?>" type="text/css" media="screen" />
-
-
+<?php if (!session_id())    session_start();
+/** * @package WordPress * @subpackage Danko */
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head>	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	<title><?php if(!empty($data['seo_title'])) { echo $data['seo_title']; } else { wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); }?></title>	<meta name="keywords" content="<?php if(!empty($data['seo_keywords'])) { echo $data['seo_keywords'];} ?>" />	<meta name="description" content="<?php if(!empty($data['seo_description'])) { echo $data['seo_description']; } else { bloginfo('description'); }?>" />	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />	<link rel="stylesheet" href="<?php echo get_template_directory_uri().'/script/pirobox/css/demo5/style.css';?>" type="text/css" media="screen" />	<link rel="stylesheet" href="<?php echo get_template_directory_uri().'/script/tabs/ui-lightness/jquery-ui-1.8.16.custom.css';?>" type="text/css" media="screen" />
+	<link rel="stylesheet" media="screen" href="<?php echo get_template_directory_uri() . "/script/superfish/superfish.css"; ?>" type="text/css"/>	<link rel="stylesheet" media="screen" href="<?php echo get_template_directory_uri() . "/script/pirobox/css/demo5/style.css"; ?>" type="text/css"/>	<link rel="stylesheet" href="<?php echo get_template_directory_uri()."/script/BeautifulNavigation/css/style.css" ?>" type="text/css" media="screen"/>	<link rel="stylesheet" href="<?php echo get_template_directory_uri()."/script/hover-img/css/mosaic.css" ?>" type="text/css" media="screen" />
 <?php
-
-$ua = $_SERVER["HTTP_USER_AGENT"];
-
-
-// Macintosh
-$mac = strpos($ua, 'Macintosh') ? true : false;
+$ua = $_SERVER["HTTP_USER_AGENT"];
+// Macintosh$mac = strpos($ua, 'Macintosh') ? true : false;
 
 // Windows
 $win = strpos($ua, 'Windows') ? true : false;
@@ -91,21 +60,8 @@ if(!empty($win)) {
 	<link rel="shortcut icon" href="<?php echo $favicon;?>" />
 
 <?php 
-   wp_deregister_script('jquery');
-    wp_register_script('jquery', 'http://ajax.microsoft.com/ajax/jQuery/jquery-1.5.1.min.js');
-    wp_enqueue_script('jquery');
-    wp_enqueue_script('bgpos', get_template_directory_uri().'/script/BeautifulNavigation/jquery.bgpos.js' );
-    wp_enqueue_script('superfish', get_template_directory_uri().'/script/superfish/superfish.js' );
-    wp_enqueue_script('ajaxpager', get_template_directory_uri() . '/script/quickpager/quickpager.jquery.js');
-    wp_enqueue_script('pirobox', get_template_directory_uri().'/script/pirobox/js/pirobox.js' );
-    wp_enqueue_script('contact', get_template_directory_uri().'/script/contact/contact.js' );
-    wp_enqueue_script('easing', get_template_directory_uri().'/script/easing/jquery.easing.1.3.js' );
-    wp_enqueue_script('mosaic', get_template_directory_uri().'/script/hover-img/js/mosaic.1.0.1.js' );
-    wp_enqueue_script('my-commons', get_template_directory_uri().'/script/common.js' );
-
-
-    if (is_singular())
-        wp_enqueue_script("comment-reply");
+	wp_deregister_script('jquery');    wp_register_script('jquery', 'http://ajax.microsoft.com/ajax/jQuery/jquery-1.5.1.min.js');    wp_enqueue_script('jquery');    wp_enqueue_script('bgpos', get_template_directory_uri().'/script/BeautifulNavigation/jquery.bgpos.js' );    wp_enqueue_script('superfish', get_template_directory_uri().'/script/superfish/superfish.js' );    wp_enqueue_script('ajaxpager', get_template_directory_uri() . '/script/quickpager/quickpager.jquery.js');    wp_enqueue_script('pirobox', get_template_directory_uri().'/script/pirobox/js/pirobox.js' );    wp_enqueue_script('contact', get_template_directory_uri().'/script/contact/contact.js' );    wp_enqueue_script('easing', get_template_directory_uri().'/script/easing/jquery.easing.1.3.js' );    wp_enqueue_script('mosaic', get_template_directory_uri().'/script/hover-img/js/mosaic.1.0.1.js' );    wp_enqueue_script('my-commons', get_template_directory_uri().'/script/common.js' );
+    if (is_singular())        wp_enqueue_script("comment-reply");
     
     ?>
 

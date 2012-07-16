@@ -8,17 +8,7 @@ width: 500px;
 height: 334px;
 }
 
-.jdGallery .slideInfoZone
-{
-
-position: absolute;
-z-index: 50;
-width: 100%;
-margin: 0px;
-left: 0;
-bottom: 0;
-text-indent: 0;
-overflow: hidden;
+.jdGallery .slideInfoZone {	position: absolute;	z-index: 50;	width: 100%;	margin: 0px;	left: 0;	bottom: 0;	text-indent: 0;	overflow: hidden;
 }
 
 #myGallery img.thumbnail, #myGallerySet img.thumbnail
@@ -26,11 +16,7 @@ overflow: hidden;
 display: none;
 }
 
-.jdGallery
-{
-overflow: hidden;
-position: relative;
-}
+.jdGallery {	overflow: hidden;	position: relative;	margin: 0 0 25px;}
 
 .jdGallery img
 {

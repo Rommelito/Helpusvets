@@ -153,20 +153,8 @@
 
 
             
-  <div class="slider-content left">
-         
-               
-                <div id="menuWrapper" class="menuWrapper bg1">
-                    <ul class="menu-slider" id="menu-slider">
-
-                          <?php
-                                   $current_page_id = get_ID_by_slug($post->post_name);
-                                   $page = get_page_by_title($post->post_name);
-                                   $meta = (get_post_meta($current_page_id,'',true));
-                                   $background_images = array();
-                                   $cat = get_option(THEME_NAME.'_front_slider_category');
-                                   $args=array('cat' => $cat, 'post_status' => 'publish','posts_per_page' => 3, 'meta_key'=>'_thumbnail_id');
-
+	<div class="slider-content left">		<?php			$category_feature_rotator = get_post_meta($post->ID, "category_feature_rotator", true);			$catidforgallery = false;				if (isset($category_feature_rotator) && $category_feature_rotator != 0) { $catidforgallery = $category_feature_rotator; }			include (ABSPATH . '/wp-content/plugins/featured-content-gallery/gallery.php');		?><!--	<div id="menuWrapper" class="menuWrapper bg1">			<ul class="menu-slider" id="menu-slider">
+                          <?php                                   $current_page_id = get_ID_by_slug($post->post_name);                                   $page = get_page_by_title($post->post_name);                                   $meta = (get_post_meta($current_page_id,'',true));                                   $background_images = array();                                   $cat = get_option(THEME_NAME.'_front_slider_category');                                   $args=array('cat' => $cat, 'post_status' => 'publish','posts_per_page' => 3, 'meta_key'=>'_thumbnail_id');
                                    query_posts($args);                                   
                                    $i = 1;
                                    $iposition = 0;
@@ -197,14 +185,7 @@
                                    
                                    $bg = 'bg'.$i;
                                    $background_images[$i] = $img;
-                            ?>
-                        
-            
-                        
-                        
-                        
-                        
-                                      
+                            ?>                                     
                         <li class="bg1 <?php echo $lastclass;?>" style="background:url(<?php echo get_template_directory_uri(); ?>/script/timthumb.php?src=<?php print $background_images['1'];?>&w=935&h=407&zc=1&q=100)  no-repeat;background-position: <?php echo $iposition?>px 0px;">
                             <a href="<?php echo get_permalink(); ?>" id="<?php echo $bg; ?>" rev="background:url(<?php echo get_template_directory_uri(); ?>/script/timthumb.php?src=<?php print $background_images[$i];?>&w=935&h=407&zc=1&q=100)  no-repeat;" ><?php echo substr($title,0,22).$dots; ?></a>
                             <span>
@@ -227,18 +208,9 @@
                         
 
 
-    <?php }}
-                                               $i++;
-                                               $iposition= $iposition - 311;
-                                           endwhile;
-                                           ?>
-
-                   
-
+    <?php }}                                               $i++;                                               $iposition= $iposition - 311;                                           endwhile;                                           ?>
                     </ul>
-                </div>
-  </div>
-
+		</div>	</div>-->
 
       <?php
           global $wpdb;
@@ -333,22 +305,13 @@
                 </div>
 
             </div><!--/home-money-button-->
-                 <div class="other-content">
-<!--                    	 <?php
-					/* Run the loop to output the page.
-					 * If you want to overload this in a child theme then include a file
-					 * called loop-page.php and that will be used instead.
-					 */
+			<div class="other-content">				<div id="home_about_us">					<p>“The World’s Smallest Charity					</br>-presents-					</br>The World’s Biggest Swimming Event.”					</br>***					</br>Summer 2012 / 13					</br>***					</br>Please Help-Us-Vets launch our					</br>Disabled Veterans Swimming Event,					</br>“Leave No Man Behind.”					</br>***					</br>“The World’s 1st Disabled Person To Swim Around The Statue if Liberty,					</br>Around Manhattan Island and Across The English Channel.”					</br>***					</br>Our Purpose: To bring America’s attention to our cause,					</br>“Help for America’s disabled/homeless Veterans.”</p>				</div>
+<!--			<?php					/* Run the loop to output the page.					 * If you want to overload this in a child theme then include a file					 * called loop-page.php and that will be used instead.					 */
 					//get_template_part( 'loop', 'page' );
-					 wp_reset_query();
-						if ( have_posts() ) : while ( have_posts() ) : the_post();
-						the_content();
-						 endwhile;
-						else:
-						endif;
+					 wp_reset_query();						if ( have_posts() ) : while ( have_posts() ) : the_post();						the_content();						 endwhile;						else:						endif;
 					wp_reset_query();
-					?>-->
-                  </div>
+					?>-->
+                  </div>
             </div>
         </div><!--/wrapper-->
 

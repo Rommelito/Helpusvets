@@ -55,13 +55,9 @@ h3{
 
 
 /*--- LOGO ---*/.logo{    width: 356px;    height: 58px;    margin: 0 auto;    text-align: center;    display: inline-block;}
-/*--- NAVIGACIJA ---*/
-.nav-two,
-.nav{
-    width: 300px;
-    margin-top: 10px;}
-.nav-two ul,
-.nav ul{float: left;}
+/*--- Nav bar ---*/
+.nav-two,.nav{    width: 300px;}
+.nav-two ul,.nav ul{	float: left;}
 
 .nav-two ul.right-nav,
 .nav ul.right-nav{float: right;}
@@ -120,7 +116,7 @@ h3{
 
 .slider-content{
     width: 961px;
-    background: url(../style/img/bg-slider.jpg) no-repeat top left;
+/*    background: url(../style/img/bg-slider.jpg) no-repeat top left;*/
     padding: 12px 0 0 0;}
 
 #menuWrapper .menu-slider span{
@@ -134,84 +130,11 @@ h3{
     margin: -27px 0 0 0;
     text-align: center;}
 
-.home-money-button{
-    width: 100%;
-    margin-bottom: 25px;}
-
-
-.home-money{width: 602px}
-
-.home-money ul{
-    float: left;
-    width: 100%;}
-
-.home-money ul li{
-    float: left;
-    width: 58px;
-    height: 66px;
-    background: url(../style/img/bg-home-money.png) no-repeat top left;
-    margin-right: 3px;
-    color: #4e2d28;
-    font-size: 14px;
-    font-family: 'Helvetica';
-    color: #fbf7e9;
-    font-size: 57px;
-    font-family: 'Helvetica';
-    font-weight: bold;
-    text-align: center;
-    padding: 16px 0 0 0;
-    overflow: hidden;}
-
-.home-money ul li.home-money-one{
-    float: left;
-    width: 155px;
-    height: 67px;
-    background: url(../style/img/bg-home-money-one.png) no-repeat top left;
-    color: #fbf7e9;
-    font-size: 20px;
-    font-family: 'Helvetica';
-    font-weight: bold;
-    text-align: left;
-    padding: 16px 0 0 17px;
-    line-height: 26px;}
-
-.home-money-border{
-    width: 100%;
-    height: 1px;
-    border-top: 1px solid #261616;
-    position: relative;
-    z-index: 9;
-    top: -35px;}
-
-
-.home-button{
-    width: 169px;
-    height: 42px;        float: right;    display: inline-block;	outline: none;	cursor: pointer;	text-align: center;	text-decoration: none;	font: bold 50px/100% Arial, Helvetica, sans-serif;	padding: .27em 1.8em .50em;	text-shadow: 0 1px 1px rgba(0,0,0,.3);	-webkit-border-radius: .1em; 	-moz-border-radius: .1em;	border-radius: .1em;	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);	box-shadow: 0 1px 2px rgba(0,0,0,.2);}.home-button:hover {	text-decoration: none;}.home-button:active {	position: relative;	top: 1px;}.home-button a{    float: right;	color: #FBF7E9;    text-align: right;}/* red */.red {    background: -moz-linear-gradient(center top , #e21f0e, #941409) repeat scroll 0 0 transparent;    border: 1px solid #222;    color: #FADDDE;}.red:hover {    background: -moz-linear-gradient(center top , #C9151B, #A11115) repeat scroll 0 0 transparent;}.red:active {    background: -moz-linear-gradient(center top , #AA1317, #ED1C24) repeat scroll 0 0 transparent;    color: #DE898C;}
-/*
-.home-button-left{
-    width: 60px;
-    height: 84px;
-    background: url(../style/img/home-button-left.png) no-repeat top right;}
-
-.home-button-center{
-    height: 66px;
-    background: url(../style/img/home-button-center.png) repeat-x top right;
-    color: #fcf8ea;
-    font-size: 57px;
-    font-family: 'Helvetica';
-    font-weight: bold;
-    padding: 18px 5px 0;
-    text-align: center;}
-
-.home-button-right{
-    width: 60px;
-    height: 84px;
-    background: url(../style/img/home-button-right.png) no-repeat top right;}
-
-.home-button a:hover div{
-    color: #4e2d28;
-    background-position: bottom;}*/
-
+.home-money-button{	width: 100%;	margin: 0 0 25px;}
+.home-money{	width: 602px}
+.home-money ul{	float: left;    width: 100%;}.home-money ul li{    float: left;    width: 58px;    height: 66px;    background: url(../style/img/bg-home-money.png) no-repeat top left;    margin-right: 3px;    color: #4e2d28;    font-size: 14px;    font-family: 'Helvetica';    color: #fbf7e9;    font-size: 57px;    font-family: 'Helvetica';    font-weight: bold;    text-align: center;    padding: 16px 0 0 0;    overflow: hidden;}.home-money ul li.home-money-one{    float: left;    width: 155px;    height: 67px;    background: url(../style/img/bg-home-money-one.png) no-repeat top left;    color: #fbf7e9;    font-size: 20px;    font-family: 'Helvetica';    font-weight: bold;    text-align: left;    padding: 16px 0 0 17px;    line-height: 26px;}.home-money-border{    width: 100%;    height: 1px;    border-top: 1px solid #261616;    position: relative;    z-index: 9;    top: -35px;}.home-button{    width: 169px;    height: 42px;    float: right;    display: inline-block;	outline: none;	cursor: pointer;	text-align: center;	text-decoration: none;	font: bold 50px/100% Arial, Helvetica, sans-serif;	padding: .27em 1.8em .50em;	text-shadow: 0 1px 1px rgba(0,0,0,.3);	-webkit-border-radius: .1em; 	-moz-border-radius: .1em;	border-radius: .1em;	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);	box-shadow: 0 1px 2px rgba(0,0,0,.2);}.home-button:hover {	text-decoration: none;}.home-button:active {	position: relative;	top: 1px;}.home-button a{    float: right;	color: #FBF7E9;    text-align: right;}/* red */.red {    background: -moz-linear-gradient(center top , #e21f0e, #941409) repeat scroll 0 0 transparent;    border: 1px solid #222;    color: #FADDDE;}.red:hover {    background: -moz-linear-gradient(center top , #C9151B, #A11115) repeat scroll 0 0 transparent;}.red:active {    background: -moz-linear-gradient(center top , #AA1317, #ED1C24) repeat scroll 0 0 transparent;    color: #DE898C;}
+/*.home-button-left{    width: 60px;    height: 84px;    background: url(../style/img/home-button-left.png) no-repeat top right;}.home-button-center{    height: 66px;    background: url(../style/img/home-button-center.png) repeat-x top right;    color: #fcf8ea;    font-size: 57px;    font-family: 'Helvetica';    font-weight: bold;    padding: 18px 5px 0;    text-align: center;}.home-button-right{    width: 60px;    height: 84px;    background: url(../style/img/home-button-right.png) no-repeat top right;}.home-button a:hover div{    color: #4e2d28;    background-position: bottom;}*/
+#home_about_us{	border-top: 1px dashed #bbb;	padding-top: 25px;	font-size:32px;	font-family:Times;	font-style:italic;	text-align:center;	line-height:32px;	}
 .home-blog-post{
     width: 960px;
     margin:0 auto 40px auto;
@@ -392,13 +315,7 @@ h3{
 .last {
     margin: 0 0 0px 0!important;}
 
-#one-columns,
-#two-columns,
-#three-columns,
-#four-columns,
-#five-columns{
-    float: left;
-    width: 100%;}
+#one-columns,#two-columns,#three-columns,#four-columns,#five-columns{    float: left;    width: 100%;	border-top: 1px dashed #BBB;	padding-top: 25px;}
 
 #one-columns{margin-bottom: 35px;}
 
@@ -611,25 +528,10 @@ display:block;
     margin:0 0 30px 0;
     width:100%;}
 
-.other-content-side {
-    color: #505961;
-    float: left;
-    font-family: 'Helvetica', Arial, sans-serif;
-    font-size: 12px;
-    line-height: 20px;
-    margin:0 26px 30px 0;
-    width:67%;}
-
-
-/* HEADINGS */
-
-h1.heading {
-    margin:20px 0 10px 0;
-    font-size:34px;
-    width:100%;
-    float:left;
-    clear:both;}
-
+.other-content-side {
+    color: #222;    float: left;    font-family: Georgia, "Times New Roman", Times, serif;    font-size: 12px;    line-height: 20px;    margin:0 26px 30px 0;    width:67%;}
+/* HEADINGS */
+h1.heading {    margin:20px 0 10px 0;    font-size:34px;    width:100%;    float:left;    clear:both;}
 h2.heading {
     margin:5px 0 5px 0;
     width:100%;
