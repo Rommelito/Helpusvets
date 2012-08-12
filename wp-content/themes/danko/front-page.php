@@ -153,7 +153,7 @@
 
 
             
-	<div class="slider-content left">		<?php			$category_feature_rotator = get_post_meta($post->ID, "category_feature_rotator", true);			$catidforgallery = false;				if (isset($category_feature_rotator) && $category_feature_rotator != 0) { $catidforgallery = $category_feature_rotator; }			include (ABSPATH . '/wp-content/plugins/featured-content-gallery/gallery.php');		?><!--	<div id="menuWrapper" class="menuWrapper bg1">			<ul class="menu-slider" id="menu-slider">
+	<div class="slider-content left"><!--		<?php			$category_feature_rotator = get_post_meta($post->ID, "category_feature_rotator", true);			$catidforgallery = false;				if (isset($category_feature_rotator) && $category_feature_rotator != 0) { $catidforgallery = $category_feature_rotator; }			include (ABSPATH . '/wp-content/plugins/featured-content-gallery/gallery.php');		?>--><!--	<div id="menuWrapper" class="menuWrapper bg1">			<ul class="menu-slider" id="menu-slider">
                           <?php                                   $current_page_id = get_ID_by_slug($post->post_name);                                   $page = get_page_by_title($post->post_name);                                   $meta = (get_post_meta($current_page_id,'',true));                                   $background_images = array();                                   $cat = get_option(THEME_NAME.'_front_slider_category');                                   $args=array('cat' => $cat, 'post_status' => 'publish','posts_per_page' => 3, 'meta_key'=>'_thumbnail_id');
                                    query_posts($args);                                   
                                    $i = 1;
@@ -223,7 +223,7 @@
    
       ?>
 
-            <div class="home-money-button left">
+            <div class="home-money-button left"><!--
 
                 <div class="home-money left">
                     
@@ -274,7 +274,7 @@
                 </div><!--/home-money-->
 
                      <!--/LINK GENERATOR-->
-
+<!--
                   <?php
                         $paypal_redirect   = '';
                         $paypal_email 	   = get_option(THEME_NAME.'_paypal_email');
@@ -299,13 +299,9 @@
                         $paypal_redirect  .= '&business='.$paypal_email.'&item_name='.$item_name.'&no_shipping=1&no_note=1&item_number='.$subscription_key.'&currency_code='.$currency.'&charset=UTF-8&return='.urlencode($return).'&notify_url='.urlencode($notify_url).'&rm=2&custom='.$custom_secret.'&amount='.$product_cost;
 
 			 ?>
-
-                <div class="home-button left red">
-                    <a href="<?php echo $paypal_redirect; ?>">Donate</a>
-                </div>
-
-            </div><!--/home-money-button-->
-			<div class="other-content">				<div id="home_about_us">					<p>“The World’s Smallest Charity					</br>-presents-					</br>The World’s Biggest Swimming Event.”					</br>***					</br>Summer 2012 / 13					</br>***					</br>Please Help-Us-Vets launch our					</br>Disabled Veterans Swimming Event,					</br>“Leave No Man Behind.”					</br>***					</br>“The World’s 1st Disabled Person To Swim Around The Statue if Liberty,					</br>Around Manhattan Island and Across The English Channel.”					</br>***					</br>Our Purpose: To bring America’s attention to our cause,					</br>“Help for America’s disabled/homeless Veterans.”</p>				</div>
+<!--
+                <div class="home-button left red">                    <a href="<?php echo $paypal_redirect; ?>">Donate</a>                </div>-->            </div><!--/home-money-button-->
+			<div class="other-content">				<div id="home_about_us">					<p>“Leave No Man Behind.”					</br>Our disabled Veteran swimmer will attempt to become,					</br>“The World's 1st Disabled Person To Swim					</br>Around The Statue of Liberty, Around Manhattan Island					</br>and Across The English Channel.”					</br>Summer 2012 - 13.					</br>See our videos @ YouTube.com/HelpUsVets					</br>YouTube.com/9-11SouvinirPoster					</br>***					</br>Our Purpose:					</br>To bring national attention to our cause,					</br>“Help for America’s Disabled/Homeless Veterans.”					</br>***					</br>To HelpUsVets: Click on PayPal. 100% Tax Deductible.					</br>We are a non-profit, 501 (c)(3) Charitable Organization of					</br>America’s Armed Forces Veterans.					</br>***					</br>Sponsorship Inquiries: sponsor@helpusvets.org</p>				</div>
 <!--			<?php					/* Run the loop to output the page.					 * If you want to overload this in a child theme then include a file					 * called loop-page.php and that will be used instead.					 */
 					//get_template_part( 'loop', 'page' );
 					 wp_reset_query();						if ( have_posts() ) : while ( have_posts() ) : the_post();						the_content();						 endwhile;						else:						endif;
@@ -314,5 +310,5 @@
                   </div>
             </div>
         </div><!--/wrapper-->
-
-<?php get_footer(); ?>
+<!--
+<?php get_footer(); ?>
