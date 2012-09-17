@@ -141,7 +141,7 @@ if(!empty($win)) {
           $transaction_sum_str =(string)$transaction_sum;
           $transaction_array = str_split($transaction_sum_str);
       ?>
-
+<!--
             <div class="home-money-button left">
 
                <div class="home-money left">
@@ -191,7 +191,7 @@ if(!empty($win)) {
                         <?php } ?>
 
                     </ul>
-                </div><!--/home-money-->
+                </div><!--/home-money--><!--
      <?php
                         $paypal_redirect   = '';
                         $paypal_email 	   = get_option(THEME_NAME.'_paypal_email');
@@ -216,15 +216,15 @@ if(!empty($win)) {
                         $paypal_redirect  .= 'https://www.'.$sendbox_addon.'paypal.com/webscr?cmd=_xclick';
                         $paypal_redirect  .= '&business='.$paypal_email.'&item_name='.$item_name.'&no_shipping=1&no_note=1&item_number='.$subscription_key.'&currency_code='.$currency.'&charset=UTF-8&return='.urlencode($return).'&notify_url='.urlencode($notify_url).'&rm=2&custom='.$custom_secret.'&amount='.$product_cost;
 
-				   ?>
-
+				   ?>-->
+<!--
                 <div class="home-button left red">
                     <a href="<?php echo $paypal_redirect; ?>">Donate</a>
                 </div>
 
             </div><!--/home-money-button-->
 
-              <div class="border-header left"></div>
+<!--              <div class="border-header left"></div>-->
 <?php } ?>
 
               </div><!--/wrapper-->
